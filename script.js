@@ -1,4 +1,28 @@
+import {createUser} from './js/apicalls.js';
+
 //check for loaded users on localhost
+let dayToMilliseconds = 86400000;
+let tomorrow = Date.now() + dayToMilliseconds;
+
+
+//get the localstoreage token if theres one
+let localStorageUserToken = JSON.parse(localStorage.getItem('localStorageUserToken'));
+
+// check if local storage token exists and its valid
+if(localStorageUserToken != null && localStorageUserToken.token !== undefined &&  localStorageUserToken.time !== undefined){
+    //if it exists, then check if its not expired
+   if(localStorageUserToken.time > Date.now()){
+    //check if on the server it is still a valid one
+   }
+   else{
+    // call for loggin
+   }
+}
+else{
+    //call for loggin
+}
+
+
 //if not loaded, redirect to login
 //once with checekd user procede
 // fetch users properties

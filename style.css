@@ -154,8 +154,8 @@ main:hover .glass-bg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 2rem 2rem 2rem;
-  font-size: 4rem;
+  padding: 2rem;
+  font-size: 3rem;
   border: 2px solid;
   border-radius: 50%;
   filter: drop-shadow(0 1px 3px #ffffff);
